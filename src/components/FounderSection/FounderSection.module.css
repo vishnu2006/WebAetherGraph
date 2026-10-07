@@ -1,0 +1,76 @@
+.founderSection {
+  background: var(--bg-color);
+  padding: 80px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 48px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 24px;
+  border: 2px solid var(--border-color);
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem !important;
+  margin-bottom: 0 !important;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981; /* Green */
+  box-shadow: 0 0 10px #10b981;
+}

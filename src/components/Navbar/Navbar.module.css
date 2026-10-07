@@ -1,0 +1,77 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.topBanner {
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  border-bottom: 1px solid var(--glass-border);
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.highlight {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.navbar {
+  width: 100%;
+  padding: 16px 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  background: rgba(3, 3, 5, 0.7);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 6px;
+}
+
+.links {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+
+.links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.links a:hover {
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+  }
+}

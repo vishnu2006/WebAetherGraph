@@ -1,0 +1,116 @@
+.engineeringSection {
+  background: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.header p {
+  font-size: 1.1rem;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.metricCard {
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.metricCard:hover {
+  transform: translateY(-4px);
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.metricValue {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.metricLabel {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.highlightTitle {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.techStack {
+  width: 100%;
+  text-align: center;
+}
+
+.techTitle {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.pills span {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .metricsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .highlightsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

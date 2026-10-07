@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 64px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.header p {
+  font-size: 1.1rem;
+}
+
+.diagram {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.svg {
+  width: 100%;
+  min-width: 600px;
+  max-width: 900px;
+  height: auto;
+}
+
+.node {
+  fill: rgba(255, 255, 255, 0.05);
+  stroke: var(--glass-border);
+  stroke-width: 1.5;
+  transition: all 0.3s ease;
+}
+
+.nodeHighlight {
+  fill: rgba(59, 130, 246, 0.1);
+  stroke: var(--accent-primary);
+  stroke-width: 2;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.nodeText {
+  fill: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.edge {
+  fill: none;
+  stroke: url(#edgeGrad);
+  stroke-width: 2;
+  stroke-dasharray: 6;
+  animation: flow 20s linear infinite;
+}
+
+.edgeLabel {
+  fill: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+
+.nodeGroup:hover .node {
+  fill: rgba(255, 255, 255, 0.1);
+  stroke: var(--text-primary);
+}
+
+@keyframes flow {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
