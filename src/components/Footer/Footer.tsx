@@ -15,7 +15,7 @@ export default function Footer() {
           </div>
           <div className={styles.links}>
             <a href="https://github.com/vishnu2006/AetherGraph-GraphRAG-Engine" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="mailto:vishnu@example.com">Contact</a>
+            <a href="mailto:founder@aethergraph.in">Contact</a>
           </div>
         </div>
         <div className={styles.bottom}>
