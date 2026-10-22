@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  basePath: "/aethergraph",
 };
 
 export default nextConfig;
